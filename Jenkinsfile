@@ -2,15 +2,15 @@
 pipeline {
          agent any
          stages {
-            stage('Parameters') {
-                steps {
-                    script{
-                    resp = input message: 'Enter the branch name: ', parameters: [string(defaultValue: 'master',
-                    description: 'Enter response', name: 'branchname')]
-                    }
-                    echo "${resp}"
-                }
-            }
+            //stage('Parameters') {
+                //steps {
+                    //script{
+                    //resp = input message: 'Enter the branch name: ', parameters: [string(defaultValue: 'master',
+                    //description: 'Enter response', name: 'branchname')]
+                    //}
+                    //echo "${resp}"
+                //}
+            //}
         
             stage('Build') {
                 steps {
